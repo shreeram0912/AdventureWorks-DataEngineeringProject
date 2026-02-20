@@ -8,11 +8,17 @@
 		"AzureDataLakeStoragelinkedservices_accountKey": {
 			"value": ""
 		},
+		"synapseanalytics-adventureworks-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapseanalytics-adventureworks.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
 		"AzureDataLakeStoragelinkedservices_properties_typeProperties_url": {
 			"value": "https://datalakeadventureworks1.dfs.core.windows.net/"
 		},
 		"httplinkedservice_properties_typeProperties_url": {
 			"value": "https://raw.githubusercontent.com"
+		},
+		"synapseanalytics-adventureworks-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://defaultstoragesynapsead.dfs.core.windows.net"
 		}
 	}
 }
