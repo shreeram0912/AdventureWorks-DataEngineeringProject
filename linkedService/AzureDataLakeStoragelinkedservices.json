@@ -1,0 +1,12 @@
+{
+	"name": "AzureDataLakeStoragelinkedservices",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://datalakeadventureworks1.dfs.core.windows.net/",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDhBNDg2RTYxLTQwQzQtNENCRi05RjQzLTA0NjFGMTlDMUU5Rl9iZGNjMDIzZi0xNzBhLTQ2NjAtOGI1Ny1hNzYwYjc4NjZlYjAiDQp9"
+		}
+	}
+}

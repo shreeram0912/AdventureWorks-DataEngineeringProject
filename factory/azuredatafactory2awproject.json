@@ -1,0 +1,9 @@
+{
+	"name": "azuredatafactory2awproject",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "fc1dc5ba-6c05-41dd-bab3-44a9ca4d0095",
+		"tenantId": "cde94195-18ae-421b-b772-b3b6a96f00cc"
+	}
+}

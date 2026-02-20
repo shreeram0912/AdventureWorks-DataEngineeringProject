@@ -1,0 +1,39 @@
+{
+	"name": "dataset_dynamic_datalake",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStoragelinkedservices",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"parameter_sink_folder_bronze_datalake": {
+				"type": "String"
+			},
+			"parameter_file_name": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().parameter_file_name",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().parameter_sink_folder_bronze_datalake",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
