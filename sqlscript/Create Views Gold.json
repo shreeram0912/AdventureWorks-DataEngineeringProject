@@ -1,0 +1,17 @@
+{
+	"name": "Create Views Gold",
+	"properties": {
+		"content": {
+			"query": "--- Create Calendar View\nCREATE VIEW gold.calendar\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Calendar',\n    FORMAT = 'PARQUET'\n) AS Query1\n\n--- Create Customers View\nCREATE VIEW gold.customers\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Customers',\n    FORMAT = 'PARQUET'\n) AS Query1\n\n\n--- Create Product_Subcategories View\nCREATE VIEW gold.product_subcategories\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Product_Subcategories',\n    FORMAT = 'PARQUET'\n) AS Query1\n\n\n--- Create Products View\nCREATE VIEW gold.products\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Products',\n    FORMAT = 'PARQUET'\n) AS Query1\n\n\n--- Create Returns View\nCREATE VIEW gold.returns\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Returns',\n    FORMAT = 'PARQUET'\n) AS Query1\n\n\n--- Create Sales View\nCREATE VIEW gold.sales\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Sales',\n    FORMAT = 'PARQUET'\n) AS Query1\n\n\n--- Create Territories View\nCREATE VIEW gold.territories\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Territories',\n    FORMAT = 'PARQUET'\n) AS Query1\n\n\n--- Create Product_Category View\nCREATE VIEW gold.product_categories\nAS SELECT * FROM\nOPENROWSET(\n    BULK 'https://datalakeadventureworks1.dfs.core.windows.net/silver/AdventureWorks_Product_Categories',\n    FORMAT = 'PARQUET'\n) AS Query1\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "awdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
