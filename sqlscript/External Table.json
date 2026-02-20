@@ -1,0 +1,17 @@
+{
+	"name": "External Table",
+	"properties": {
+		"content": {
+			"query": "-- Creating External Table in Synapse Analytics follows 3 step process:\nCREATE MASTER KEY ENCRYPTION BY PASSWORD = 'Home@123'\n-- 1. Credential - Pick the data using managed identity, SAS Token or CLI \nCREATE DATABASE SCOPED CREDENTIAL cred_ram\nWITH\n    IDENTITY = 'Managed Identity'\n-- 2. External Data Source - when we don't want to use URL for all tables reading \n-- need to create separate external data source for gold and silve\nCREATE EXTERNAL DATA SOURCE source_silver\nWITH\n    (\n        LOCATION = 'https://datalakeadventureworks1.dfs.core.windows.net/silver',\n        CREDENTIAL = cred_ram\n    )\n\n-- Gold\nCREATE EXTERNAL DATA SOURCE source_gold\nWITH\n    (\n        LOCATION = 'https://datalakeadventureworks1.dfs.core.windows.net/gold',\n        CREDENTIAL = cred_ram\n    )\n\n\n-- 3. External File Format - Define format\nCREATE EXTERNAL FILE FORMAT format_parquet\nWITH\n    (\n        FORMAT_TYPE = PARQUET,\n        DATA_COMPRESSION = 'org.apache.hadoop.io.compress.SnappyCodec'\n    )\n\n------------------------------------\n-- CREATE EXTERNAL TABLES\n-------------------------------------\n\nCREATE EXTERNAL TABLE gold.externalsales\nWITH\n    (\n        LOCATION = 'externalsales',\n        DATA_SOURCE = source_gold,\n        FILE_FORMAT = format_parquet\n    ) AS\n    SELECT * FROM gold.sales\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "awdatabase",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
