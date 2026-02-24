@@ -37,7 +37,8 @@ AdventureWorks-DataEngineeringProject/
 
 
 
-https://img.shields.io/badge/Bronze%20Layer-CD7F32?style=for-the-badge&logo=azuredevops&logoColor=white
+
+### ![Bronze Layer](https://img.shields.io/badge/Bronze%20Layer-CD7F32?style=for-the-badge&logo=azuredevops&logoColor=white)
 ```
 AdventureWorks-DataEngineeringProject/
 └── Bronze Layer/
