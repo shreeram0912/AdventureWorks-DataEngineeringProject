@@ -52,4 +52,4 @@ This project showcases a complete modern data engineering workflow on Azure, imp
 * Scalable analytics design
 It reflects real-world enterprise data engineering solutions using Azure cloud technologies.
 
-Jai Shreeram - https://img.shields.io/badge/Jai%20Shreeram-FF4500
+[!https://img.shields.io/badge/Jai%20Shreeram-FF4500](https://img.shields.io/badge/just%20the%20message-8A2BE2)
