@@ -1,5 +1,5 @@
 
-## 📂 Project Folder Structure
+## 🗂️ Project Folder Structure
 
 AdventureWorks-DataEngineeringProject/
 ├── ![Bronze Layer](https://img.shields.io/badge/Bronze%20Layer-CD7F32?style=for-the-badge&logo=azuredevops&logoColor=white)
@@ -36,6 +36,13 @@ AdventureWorks-DataEngineeringProject/
 │   └── SQL script 2.json
 
 
+
+https://img.shields.io/badge/Bronze%20Layer-CD7F32?style=for-the-badge&logo=azuredevops&logoColor=white
+```
+AdventureWorks-DataEngineeringProject/
+└── Bronze Layer/
+    └── DynamicGithub2RawIngestion.json
+```
 
 
 <img width="920" height="528" alt="Pipeline Architecture" src="https://github.com/user-attachments/assets/4210b965-8fe8-458d-9fba-2a79b7f84984" />
