@@ -2,6 +2,9 @@
 ### **Project Overview**
 This project demonstrates an end-to-end Azure Data Engineering pipeline using the Medallion Architecture (Bronze, Silver, Gold) pattern on the AdventureWorks dataset.
 The pipeline ingests data dynamically from GitHub using Azure Data Factory (ADF), processes and transforms it using Azure Databricks, and finally serves curated business-ready data through Azure Synapse Analytics.
+```
+<img width="1409" height="577" alt="Project drawio" src="https://github.com/user-attachments/assets/6529ddba-5298-48ad-bbe7-2ee9f2a8a705" />
+```
 
 ### **🗂️ Project Folder Structure**
 ```
@@ -49,6 +52,7 @@ AdventureWorks-DataEngineeringProject/
 * This pipeline: Connects to GitHub via HTTP linked service, Uses parameterized datasets, Dynamically ingests multiple files, Stores raw data into ADLS Gen2
 * Linked Services: HTTP (GitHub connection), Azure Data Lake Storage Gen2
 * Output: Raw CSV files stored in (adls/container/bronze/)
+<img width="940" height="530" alt="image" src="https://github.com/user-attachments/assets/e187c0b9-0cad-429e-a3f1-efb634b5732b" />
 
 #### **🥈 Silver Layer – Data Transformation**
 * Tool Used: Azure Databricks
@@ -89,7 +93,7 @@ These enable dynamic file ingestion without hardcoding filenames.
 5. Data becomes ready for BI & reporting tools
 
 ### **Azure Services Used**
-![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0072C6)![Azure Data Factory](https://img.shields.io/badge/Azure%20Data%20Factory-0072C6)![Azure Data Lake Storage (Gen2)](https://img.shields.io/badge/Azure%20Data%20Lake%20Storage%20(Gen2)-0072C6)![Azure Databricks](https://img.shields.io/badge/Azure%20Databricks-FF3621)![Azure Synapse Analytics](https://img.shields.io/badge/Azure%20Synapse%20Analytics-FFD700)![GitHub](https://img.shields.io/badge/GitHub-181717)
+![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0072C6)![GitHub](https://img.shields.io/badge/GitHub-181717)![Azure Data Factory](https://img.shields.io/badge/Azure%20Data%20Factory-0072C6)![Azure Databricks](https://img.shields.io/badge/Azure%20Databricks-FF3621)![Azure Data Lake Storage (Gen2)](https://img.shields.io/badge/Azure%20Data%20Lake%20Storage%20(Gen2)-0072C6)![Azure Synapse Analytics](https://img.shields.io/badge/Azure%20Synapse%20Analytics-FFD700)
 
 ### **Features & Skills Demonstrated**
 * Features: Dynamic GitHub ingestion, Parameterized datasets, Medallion architecture, Delta/Parquet processing, External tables in Synapse, Scalable & production-ready design
@@ -106,8 +110,5 @@ These enable dynamic file ingestion without hardcoding filenames.
 ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-you_like-blue)
 
 
-<img width="920" height="528" alt="Pipeline Architecture" src="https://github.com/user-attachments/assets/4210b965-8fe8-458d-9fba-2a79b7f84984" />
-
-<img width="940" height="530" alt="image" src="https://github.com/user-attachments/assets/e187c0b9-0cad-429e-a3f1-efb634b5732b" />
 
 
