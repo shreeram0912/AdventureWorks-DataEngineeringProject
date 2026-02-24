@@ -112,8 +112,7 @@ I would like to express my heartfelt gratitude to Ansh Lamba for his insightful 
 
 ### **📬 Contact**
 Created by Shreeram — for feedback or questions, open an issue or reach out via GitHub.
+
 ![Static Badge](https://img.shields.io/badge/Happy-DataEngineering-blue)
-
-
 
 
