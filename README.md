@@ -2,9 +2,9 @@
 ### **Project Overview**
 This project demonstrates an end-to-end Azure Data Engineering pipeline using the Medallion Architecture (Bronze, Silver, Gold) pattern on the AdventureWorks dataset.
 The pipeline ingests data dynamically from GitHub using Azure Data Factory (ADF), processes and transforms it using Azure Databricks, and finally serves curated business-ready data through Azure Synapse Analytics.
-```
+
 <img width="1409" height="577" alt="Project drawio" src="https://github.com/user-attachments/assets/6529ddba-5298-48ad-bbe7-2ee9f2a8a705" />
-```
+
 
 ### **🗂️ Project Folder Structure**
 ```
