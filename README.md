@@ -1,6 +1,6 @@
 
 ## 📂 Project Folder Structure
-```
+
 AdventureWorks-DataEngineeringProject/
 ├── ![Bronze Layer](https://img.shields.io/badge/Bronze%20Layer-CD7F32?style=for-the-badge&logo=azuredevops&logoColor=white)
 │   └── DynamicGithub2RawIngestion.json
@@ -34,7 +34,6 @@ AdventureWorks-DataEngineeringProject/
 │   ├── Create Schema.json
 │   ├── Create Views Gold.json
 │   └── SQL script 2.json
-```
 
 
 
