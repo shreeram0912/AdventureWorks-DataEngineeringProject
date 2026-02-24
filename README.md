@@ -107,6 +107,14 @@ These enable dynamic file ingestion without hardcoding filenames.
   * Scalable analytics design
 - It reflects real-world enterprise data engineering solutions using Azure cloud technologies.
 
+### **🙏 Acknowledgment**
+I would like to express my heartfelt gratitude to Ansh Lamba for his insightful YouTube content on Data Engineering and Azure technologies.
+
+### **📬 Contact**
+Created by Shreeram — for feedback or questions, open an issue or reach out via GitHub.
+
+Happy Data Engineering!
+
 ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-you_like-blue)
 
 
