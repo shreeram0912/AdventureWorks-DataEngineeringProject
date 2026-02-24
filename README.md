@@ -42,6 +42,7 @@ AdventureWorks-DataEngineeringProject/
 
 ### **🏗️ Architecture Overview**
 <img width="1172" height="550" alt="image" src="https://github.com/user-attachments/assets/23a34985-72f0-478a-be12-c23dab61f2a2" />
+
 #### **🥉 Bronze Layer – Raw Data Ingestion**
 * Tool Used: Azure Data Factory
 * Objective: Ingest raw CSV files dynamically from GitHub into Azure Data Lake Storage Gen2.
@@ -63,7 +64,8 @@ AdventureWorks-DataEngineeringProject/
 * Steps: Create Schema, Create External Tables on Silver Layer data, Create curated Views for reporting
 * Final Output: Gold layer with Aggregated tables, Business logic applied, Analytical views for BI tools
 
-### **Linked Services:** Linked services act as connectors between services.
+### **Linked Services:** 
+Linked services act as connectors between services.
 | **Linked Service**                                  | **Purpose**                    |
 |-----------------------------------------------------|--------------------------------|
 | AzureDataLakeStoragelinkedservices.json             | ADF → ADLS Gen2                |
@@ -71,19 +73,27 @@ AdventureWorks-DataEngineeringProject/
 | synapseanalytics-WorkspaceDefaultSqlServer.json     | Synapse SQL endpoint           |
 | synapseanalytics-WorkspaceDefaultStorage.json       | Synapse Storage                |
 
+### **Dataset Configuration:**
+Datasets define the structure and location of the data.
+  * HTTP Dataset (GitHub Source)
+  * Parameterized GitHub Dataset
+  * Raw DataLake Dataset
+  * Dynamic DataLake Dataset
+These enable dynamic file ingestion without hardcoding filenames.
 
+### **End-to-End Data Flow**
+1. GitHub CSV files act as source
+2. ADF dynamically ingests files into Bronze (Raw)
+3. Databricks transforms data into Silver (Cleaned)
+4. Synapse creates External Tables & Views for Gold
+5. Data becomes ready for BI & reporting tools
 
+### **Azure Services Used**
+![Microsoft Azure](https://img.shields.io/badge/Microsoft%20Azure-0072C6)![Azure Data Factory](https://img.shields.io/badge/Azure%20Data%20Factory-0072C6)![Azure Data Lake Storage (Gen2)](https://img.shields.io/badge/Azure%20Data%20Lake%20Storage%20(Gen2)-0072C6)![Azure Databricks](https://img.shields.io/badge/Azure%20Databricks-FF3621)![Azure Synapse Analytics](https://img.shields.io/badge/Azure%20Synapse%20Analytics-FFD700)![GitHub](https://img.shields.io/badge/GitHub-181717)
 
-
-
-
-
-
-
-
-<img width="920" height="528" alt="Pipeline Architecture" src="https://github.com/user-attachments/assets/4210b965-8fe8-458d-9fba-2a79b7f84984" />
-
-<img width="940" height="530" alt="image" src="https://github.com/user-attachments/assets/e187c0b9-0cad-429e-a3f1-efb634b5732b" />
+### **Features & Skills Demonstrated**
+* Features: Dynamic GitHub ingestion, Parameterized datasets, Medallion architecture, Delta/Parquet processing, External tables in Synapse, Scalable & production-ready design
+* Skills: Azure Data Engineering, ETL/ELT Pipeline Design, Data Lake Architecture, Spark Transformations, SQL Data Modeling, Cloud Integration, Parameterization in ADF
 
 ### Conclusion
 - This project showcases a complete modern data engineering workflow on Azure, implementing best practices like:
@@ -96,5 +106,8 @@ AdventureWorks-DataEngineeringProject/
 ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2Fany_text-you_like-blue)
 
 
+<img width="920" height="528" alt="Pipeline Architecture" src="https://github.com/user-attachments/assets/4210b965-8fe8-458d-9fba-2a79b7f84984" />
+
+<img width="940" height="530" alt="image" src="https://github.com/user-attachments/assets/e187c0b9-0cad-429e-a3f1-efb634b5732b" />
 
 
